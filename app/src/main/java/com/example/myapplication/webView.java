@@ -29,8 +29,8 @@ public class webView extends AppCompatActivity {
         back.setOnClickListener(back1);
        webview=(WebView)findViewById(R.id.webview);
        webview.getSettings().setJavaScriptEnabled(true);
-       webview.loadUrl("http://shuttle.connectcar.net/daelim/#/route/view/0000000056df71060157adfd6de33de2");
         webview.setWebViewClient(new WebViewClient());
+        webview.loadUrl("http://naver.com");
 
     }
 
