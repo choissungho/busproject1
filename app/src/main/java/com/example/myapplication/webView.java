@@ -18,7 +18,7 @@ public class webView extends AppCompatActivity {
             Intent i = new Intent(webView.this,MainActivity.class);
             startActivity(i);
             finish();
-
+//s
         }
     };
     @Override
