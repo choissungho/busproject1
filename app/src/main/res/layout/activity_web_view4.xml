@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".webView"
+    tools:context=".WebView4Activity"
     android:orientation="vertical">
-<WebView
-    android:id="@+id/webview"
-    android:layout_width="match_parent"
-    android:layout_height="550dp">
 
-</WebView>
+
+    <WebView
+        android:id="@+id/webview4"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+    </WebView>
 
 
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/back4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="뒤로" />
-
-
 
 </LinearLayout>

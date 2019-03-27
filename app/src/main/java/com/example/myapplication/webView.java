@@ -18,7 +18,7 @@ public class webView extends AppCompatActivity {
             Intent i = new Intent(webView.this,MainActivity.class);
             startActivity(i);
             finish();
-//s
+
         }
     };
     @Override
@@ -30,7 +30,7 @@ public class webView extends AppCompatActivity {
        webview=(WebView)findViewById(R.id.webview);
        webview.getSettings().setJavaScriptEnabled(true);
         webview.setWebViewClient(new WebViewClient());
-        webview.loadUrl("http://naver.com");
+        webview.loadUrl("http://shuttle.connectcar.net/daelim/#/route/view/0000000056df71060157abfd6de33de2");
 
     }
 

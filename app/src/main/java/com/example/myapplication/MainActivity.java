@@ -19,7 +19,8 @@ public class MainActivity extends Activity {
     private Timer mTimer;
 
 
-  Button bt2;
+   Button bt2, bt6;
+    Button bt4, bt8;
 
     View.OnClickListener bus = new View.OnClickListener() {
         @Override
@@ -28,12 +29,39 @@ public class MainActivity extends Activity {
             startActivity(i);
         }
     };
+    View.OnClickListener bus2 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent e = new Intent(MainActivity.this,WebView2Activity.class);
+            startActivity(e);
+        }
+    };
+    View.OnClickListener bus3 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent r = new Intent(MainActivity.this,WebView3Activity.class);
+            startActivity(r);
+        }
+    };
+    View.OnClickListener bus4 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent t = new Intent(MainActivity.this,WebView4Activity.class);
+            startActivity(t);
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bt2=(Button)findViewById(R.id.bt2);
         bt2.setOnClickListener(bus);
+        bt4=(Button)findViewById(R.id.bt4);
+        bt4.setOnClickListener(bus2);
+        bt6=(Button)findViewById(R.id.bt6);
+        bt6.setOnClickListener(bus3);
+        bt8=(Button)findViewById(R.id.bt8);
+        bt8.setOnClickListener(bus4);
         timeTv = (TextView) findViewById(R.id.timeTv);
 
         MainTimerTask timerTask = new MainTimerTask();
