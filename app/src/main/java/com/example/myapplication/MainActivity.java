@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 
     private Timer mTimer;
 
-
+ TextView nowtime;
    Button bt2, bt6,bt1;
     Button bt4, bt8;
 
@@ -56,7 +56,6 @@ public class MainActivity extends Activity {
             startActivity(t);
         }
     };
-
     View.OnClickListener bust1 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -64,13 +63,14 @@ public class MainActivity extends Activity {
             SimpleDateFormat now = new SimpleDateFormat("HHmm");
             String currentTime = now.format(curDate);
 
-            Log.d("MainActivity", currentTime);
+
 
             for (int i = 0; i < bustime.size(); i++) {
 
             }
         }
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +84,9 @@ public class MainActivity extends Activity {
         bt8=(Button)findViewById(R.id.bt8);
         bt8.setOnClickListener(bus4);
         timeTv = (TextView) findViewById(R.id.timeTv);
+        nowtime=(TextView)findViewById(R.id.nowtime);
         bt1=(Button)findViewById(R.id.bt1);
+        bt1.setOnClickListener(bust1);
 
         MainTimerTask timerTask = new MainTimerTask();
         mTimer = new Timer();
