@@ -134,7 +134,7 @@ public class MainActivity extends Activity {
                     " HH:mm:ss ");
             String dateString = formatter.format(rightNow);
             timeTv.setText(dateString);
-
+//시간구하기
         }
     };
 
