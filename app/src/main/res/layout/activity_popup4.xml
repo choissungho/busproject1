@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center"
+    tools:context=".popup4Activity">
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="440dp"
+        android:layout_gravity="right"
+        android:background="@drawable/img4" />
+
+    <Button
+        android:text="뒤로"
+        android:id="@+id/back4"
+        android:layout_marginLeft="-303dp"
+        android:layout_marginTop="450dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>

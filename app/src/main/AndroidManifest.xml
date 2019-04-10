@@ -11,10 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WebView4Activity"></activity>
-        <activity android:name=".WebView3Activity" />
-        <activity android:name=".WebView2Activity" />
-        <activity android:name=".webView" />
+        <activity android:name=".popup4Activity" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".popup3Activity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".popup2Activity" android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".popup1Activity"
+            android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".intro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
