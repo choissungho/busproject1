@@ -65,10 +65,31 @@ public class MainActivity extends Activity {
 
 
 
+
             for (int i = 0; i < bustime.size(); i++) {
+                String element0 = bustime.get(i).toString();
+                int compare=element0.compareTo(currentTime);
+               if(compare == 0){
+
+
+                   nowtime.setText(element0);
+               }
+                    else if (compare > 0){
+
+
+                   nowtime.setText(element0);
+
+                   break;
+               }
+               else if (compare < 0){
+                   nowtime.setText("없음");
+
+               }
+
+               }
 
             }
-        }
+
     };
 
     @Override
@@ -91,6 +112,7 @@ public class MainActivity extends Activity {
         MainTimerTask timerTask = new MainTimerTask();
         mTimer = new Timer();
         mTimer.schedule(timerTask, 500, 1000);
+        bustime.add("0521");
         bustime.add("0821");
         bustime.add("0830");
         bustime.add("0836");
@@ -119,6 +141,12 @@ public class MainActivity extends Activity {
         bustime.add("1440");
         bustime.add("1455");
         bustime.add("1510");
+        bustime.add("1530");
+        bustime.add("1540");
+        bustime.add("1550");
+        bustime.add("1710");
+        bustime.add("1720");
+
 
 
 
