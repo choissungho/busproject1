@@ -112,6 +112,7 @@ public class MainActivity extends Activity {
         MainTimerTask timerTask = new MainTimerTask();
         mTimer = new Timer();
         mTimer.schedule(timerTask, 500, 1000);
+        //시간
         bustime.add("0521");
         bustime.add("0821");
         bustime.add("0830");
