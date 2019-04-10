@@ -2,12 +2,15 @@ package com.example.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -60,7 +63,7 @@ public class MainActivity extends Activity {
         @Override
         public void onClick(View v) {
             Date curDate = new Date();
-            SimpleDateFormat now = new SimpleDateFormat("HHmm");
+            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss");
             String currentTime = now.format(curDate);
 
 
@@ -106,6 +109,7 @@ public class MainActivity extends Activity {
         bt8.setOnClickListener(bus4);
         timeTv = (TextView) findViewById(R.id.timeTv);
         nowtime=(TextView)findViewById(R.id.nowtime);
+nowtime.setTextColor(Color.GREEN);
         bt1=(Button)findViewById(R.id.bt1);
         bt1.setOnClickListener(bust1);
 
@@ -113,40 +117,41 @@ public class MainActivity extends Activity {
         mTimer = new Timer();
         mTimer.schedule(timerTask, 500, 1000);
         //시간
-        bustime.add("0521");
-        bustime.add("0821");
-        bustime.add("0830");
-        bustime.add("0836");
-        bustime.add("0846");
-        bustime.add("0855");
-        bustime.add("0903");
-        bustime.add("0919");
-        bustime.add("0925");
-        bustime.add("0942");
-        bustime.add("0952");
-        bustime.add("1000");
-        bustime.add("1009");
-        bustime.add("1019");
-        bustime.add("1030");
-        bustime.add("1039");
-        bustime.add("1049");
-        bustime.add("1100");
-        bustime.add("1108");
-        bustime.add("1128");
-        bustime.add("1310");
-        bustime.add("1325");
-        bustime.add("1340");
-        bustime.add("1355");
-        bustime.add("1410");
-        bustime.add("1425");
-        bustime.add("1440");
-        bustime.add("1455");
-        bustime.add("1510");
-        bustime.add("1530");
-        bustime.add("1540");
-        bustime.add("1550");
-        bustime.add("1710");
-        bustime.add("1720");
+        bustime.add("05:21:00");
+        bustime.add("08:21:00");
+        bustime.add("08:30:00");
+        bustime.add("08:36:00");
+        bustime.add("08:46:00");
+        bustime.add("08:55:00");
+        bustime.add("09:03:00");
+        bustime.add("09:19:00");
+        bustime.add("09:25:00");
+        bustime.add("09:42:00");
+        bustime.add("09:52:00");
+        bustime.add("10:00:00");
+        bustime.add("10:09:00");
+        bustime.add("10:19:00");
+        bustime.add("10:30:00");
+        bustime.add("10:39:00");
+        bustime.add("10:49:00");
+        bustime.add("11:00:00");
+        bustime.add("11:08:00");
+        bustime.add("11:28:00");
+        bustime.add("13:10:00");
+        bustime.add("13:25:00");
+        bustime.add("13:40:00");
+        bustime.add("13:55:00");
+        bustime.add("14:10:00");
+        bustime.add("14:25:00");
+        bustime.add("14:40:00");
+        bustime.add("14:55:00");
+        bustime.add("15:10:00");
+        bustime.add("15:30:00");
+        bustime.add("15:40:00");
+        bustime.add("15:50:00");
+        bustime.add("16:50:00");
+        bustime.add("17:10:00");
+        bustime.add("17:20:00");
 
 
 
