@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:layout_centerHorizontal="true"
     android:layout_gravity="center"
-    tools:context=".popup4Activity">
+    tools:context=".DaelimApopupActivity">
 
 
     <ImageView
@@ -15,14 +15,14 @@
         android:layout_width="300dp"
         android:layout_height="440dp"
         android:layout_gravity="right"
-        android:background="@drawable/img4" />
+        android:background="@drawable/img2" />
 
     <Button
-        android:text="뒤로"
-        android:id="@+id/back4"
+        android:id="@+id/daMainClickListner"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="-303dp"
         android:layout_marginTop="450dp"
-        android:layout_width="80dp"
-        android:layout_height="50dp" />
+        android:text="뒤로" />
 
 </LinearLayout>

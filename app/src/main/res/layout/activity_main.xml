@@ -4,126 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/timeTv"
-        android:layout_gravity="center"
+        android:id="@+id/TimeTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:textSize="65dp" />
+
     <TextView
-        android:id="@+id/nowtime"
-        android:layout_gravity="center"
+        android:id="@+id/Nowtime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:textSize="65dp" />
 
 
     <LinearLayout
-        android:layout_marginTop="60dp"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp">
 
         <Button
-            android:background="@drawable/blue"
-            android:id="@+id/bt1"
+            android:id="@+id/AnyangBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
+            android:background="@drawable/blue"
             android:text=" 안양역→대림대" />
 
         <Button
-            android:background="@drawable/blue"
             android:id="@+id/bt2"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:background="@drawable/blue"
             android:text="시간표" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <Button
-            android:background="@drawable/blue"
-            android:id="@+id/bt7"
+            android:id="@+id/BeomgyeBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:text=" 범계역→대림대" />
-        <Button
             android:background="@drawable/blue"
+            android:text=" 범계역→대림대" />
+
+        <Button
             android:id="@+id/bt8"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:background="@drawable/blue"
             android:text=" 시간표" />
-
-
 
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <Button
-            android:background="@drawable/blue"
-            android:id="@+id/bt5"
+            android:id="@+id/DaelimbBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
+            android:background="@drawable/blue"
             android:text=" 대림대→범계역" />
 
         <Button
-            android:background="@drawable/blue"
             android:id="@+id/bt6"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:background="@drawable/blue"
             android:text=" 시간표" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <Button
-            android:background="@drawable/blue"
-            android:id="@+id/bt3"
+            android:id="@+id/DaelimaBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:text=" 대림대→안양역"
-            />
+            android:background="@drawable/blue"
+            android:text=" 대림대→안양역" />
 
         <Button
-            android:background="@drawable/blue"
             android:id="@+id/bt4"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:background="@drawable/blue"
             android:text=" 시간표" />
 
     </LinearLayout>
 
     <TextView
-        android:text="버스가 만차일 경우 운행시간 보다 먼저 출발 할 수 있으니 다음 운행 차량을 이용바랍니다."
-        android:textColor="#FF0000"
-        android:layout_gravity="center"
         android:layout_width="340dp"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="버스가 만차일 경우 운행시간 보다 먼저 출발 할 수 있으니 다음 운행 차량을 이용바랍니다."
+        android:textColor="#FF0000" />
 
 
     <ImageView
         android:id="@+id/alarm"
-        android:layout_marginLeft="340dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
         android:src="@drawable/clock" />
 
 

@@ -7,13 +7,13 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 
-public class intro extends AppCompatActivity {
-    private Handler handler;
+public class IntroActivity extends AppCompatActivity {
+    Handler handler;
 
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            Intent intent = new Intent(intro.this, MainActivity.class);
+            Intent intent = new Intent(IntroActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
@@ -25,7 +25,6 @@ public class intro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
         init();
-
         handler.postDelayed(runnable, 3000);
     }
 
@@ -34,7 +33,7 @@ public class intro extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         super.onBackPressed();
         handler.removeCallbacks(runnable);
     }

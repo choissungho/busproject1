@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="top"
-    tools:context=".Main2Activity">
-
+    android:orientation="vertical"
+    tools:context=".AlarmActivity">
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TimePicker
             android:id="@+id/time_picker"
@@ -23,20 +22,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <Button
-            android:layout_width="60dp"
-            android:layout_height="50dp"
             android:id="@+id/btn_start"
-            android:text="시작"/>
-
-        <Button
             android:layout_width="60dp"
             android:layout_height="50dp"
+            android:text="시작" />
+
+        <Button
             android:id="@+id/btn_finish"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             android:text="종료" />
 
     </LinearLayout>

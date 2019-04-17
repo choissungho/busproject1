@@ -2,19 +2,18 @@ package com.example.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class popup3Activity extends Activity {
+public class AnyangpopupActivity extends Activity {
 
-    Button back3;
+    Button aMainBack;
 
-    View.OnClickListener click3 =new View.OnClickListener() {
+    View.OnClickListener MainClickListner = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent i = new Intent(popup3Activity.this,MainActivity.class);
+            Intent i = new Intent(AnyangpopupActivity.this, MainActivity.class);
             startActivity(i);
         }
     };
@@ -22,9 +21,9 @@ public class popup3Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_popup3);
+        setContentView(R.layout.activity_anyangpopup);
 
-        back3 = findViewById(R.id.back3);
-        back3.setOnClickListener(click3);
+        aMainBack = findViewById(R.id.aMainBack);
+        aMainBack.setOnClickListener(MainClickListner);
     }
 }
