@@ -11,9 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".popup4Activity" android:theme="@android:style/Theme.Dialog"></activity>
-        <activity android:name=".popup3Activity" android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".popup2Activity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Main2Activity"></activity>
+        <activity
+            android:name=".popup4Activity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".popup3Activity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".popup2Activity"
+            android:theme="@android:style/Theme.Dialog" />
         <activity
             android:name=".popup1Activity"
             android:theme="@android:style/Theme.Dialog" />
@@ -25,6 +32,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        <receiver android:name=".Alarm_Reciver" />
+
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true"></service>
     </application>
 
 </manifest>

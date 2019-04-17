@@ -108,12 +108,20 @@
     </LinearLayout>
 
     <TextView
-        android:text="버스가 만차일 경우 운행시간 보다 먼저 출발 할 수 있으니, 다음 운행 차량을 이용바랍니다."
+        android:text="버스가 만차일 경우 운행시간 보다 먼저 출발 할 수 있으니 다음 운행 차량을 이용바랍니다."
         android:textColor="#FF0000"
-        android:gravity="center_horizontal"
-        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="340dp"
         android:layout_height="wrap_content" />
 
+
+
+    <ImageView
+        android:id="@+id/alarm"
+        android:layout_marginLeft="340dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clock" />
 
 
 </LinearLayout>

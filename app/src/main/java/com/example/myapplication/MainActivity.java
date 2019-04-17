@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.ParseException;
@@ -24,8 +26,8 @@ public class MainActivity extends Activity {
     private Timer mTimer;
 
  TextView nowtime;
-   Button bt2, bt6,bt1,bt3,bt5,bt7;
-    Button bt4, bt8;
+   Button  bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8;
+    ImageView alarm;
 
     ArrayList<String> bustime = new ArrayList<>();
     ArrayList<String> bustime1 = new ArrayList<>();
@@ -64,6 +66,14 @@ public class MainActivity extends Activity {
         }
     };
 
+
+    View.OnClickListener alarm1 = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(getApplicationContext(), Main2Activity.class);
+            startActivity(i);
+        }
+    };
 
 
     View.OnClickListener bust1 = new View.OnClickListener() {
@@ -206,33 +216,39 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        bt1=(Button)findViewById(R.id.bt1);
         bt2=(Button)findViewById(R.id.bt2);
+        bt3=(Button)findViewById(R.id.bt3);
+        bt4=(Button)findViewById(R.id.bt4);
+        bt5=(Button)findViewById(R.id.bt5);
+        bt6=(Button)findViewById(R.id.bt6);
+        bt7=(Button)findViewById(R.id.bt7);
+        bt8=(Button)findViewById(R.id.bt8);
+
+
+        nowtime=(TextView)findViewById(R.id.nowtime);
+        timeTv=(TextView) findViewById(R.id.timeTv);
+
 
         bt2.setOnClickListener(pop);
-
-        bt4=(Button)findViewById(R.id.bt4);
-
         bt4.setOnClickListener(pop1);
-
-        bt6=(Button)findViewById(R.id.bt6);
-
         bt6.setOnClickListener(pop2);
-
-        bt8=(Button)findViewById(R.id.bt8);
-        bt3=(Button)findViewById(R.id.bt3);
-        bt5=(Button)findViewById(R.id.bt5);
-        bt7=(Button)findViewById(R.id.bt7);
-
         bt8.setOnClickListener(pop3);
 
-        timeTv = (TextView) findViewById(R.id.timeTv);
-        nowtime=(TextView)findViewById(R.id.nowtime);
+
+
+
         nowtime.setTextColor(Color.GREEN);
-        bt1=(Button)findViewById(R.id.bt1);
+
         bt1.setOnClickListener(bust1);
         bt7.setOnClickListener(bust2);
         bt3.setOnClickListener(bust3);
         bt5.setOnClickListener(bust4);
+
+
+        alarm=(ImageView)findViewById(R.id.alarm);
+        alarm.setOnClickListener(alarm1);
 
         MainTimerTask timerTask = new MainTimerTask();
         mTimer = new Timer();
