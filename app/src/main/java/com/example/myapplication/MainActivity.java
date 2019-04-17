@@ -7,6 +7,8 @@ import android.os.Handler;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -21,12 +23,14 @@ import java.util.TimerTask;
 
 public class MainActivity extends Activity {
 
+
+
     private TextView timeTv;
 
     private Timer mTimer;
 
- TextView nowtime;
-   Button  bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8;
+    TextView nowtime;
+    Button  bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8;
     ImageView alarm;
 
     ArrayList<String> bustime = new ArrayList<>();
@@ -89,26 +93,30 @@ public class MainActivity extends Activity {
             for (int i = 0; i < bustime.size(); i++) {
                 String element0 = bustime.get(i).toString();
                 int compare=element0.compareTo(currentTime);
-               if(compare == 0){
+                if(compare == 0){
 
 
-                   nowtime.setText(element0);
-               }
-                    else if (compare > 0){
+                    nowtime.setText(element0);
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
+                }
+                else if (compare > 0){
 
 
-                   nowtime.setText(element0);
-
-                   break;
-               }
-               else if (compare < 0){
-                   nowtime.setText("없음");
-
-               }
-
-               }
+                    nowtime.setText(element0);
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
+                    break;
+                }
+                else if (compare < 0){
+                    nowtime.setText("없음");
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
+                }
 
             }
+
+        }
 
     };
     View.OnClickListener bust2 =new View.OnClickListener() {
@@ -128,17 +136,21 @@ public class MainActivity extends Activity {
 
 
                     nowtime.setText(element1);
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                 }
                 else if (compare > 0){
 
 
                     nowtime.setText(element1);
-
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                     break;
                 }
                 else if (compare < 0){
                     nowtime.setText("없음");
-
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                 }
 
             }
@@ -161,17 +173,23 @@ public class MainActivity extends Activity {
 
 
                     nowtime.setText(element2);
+                    // text animation s
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                 }
                 else if (compare > 0){
 
 
                     nowtime.setText(element2);
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
 
                     break;
                 }
                 else if (compare < 0){
                     nowtime.setText("없음");
-
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                 }
 
             }
@@ -194,24 +212,28 @@ public class MainActivity extends Activity {
 
 
                     nowtime.setText(element3);
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                 }
                 else if (compare > 0){
 
 
                     nowtime.setText(element3);
-
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                     break;
                 }
                 else if (compare < 0){
                     nowtime.setText("없음");
-
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
+                    nowtime.startAnimation(anim);
                 }
 
             }
         }
     };
 
-//
+    //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
