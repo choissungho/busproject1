@@ -21,9 +21,20 @@ public class AlarmActivity extends AppCompatActivity {
     TimePicker alarm_timepicker;
     Context context;
     PendingIntent pendingIntent;
-
+    Button btnback;
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
+
+        View.OnClickListener btnclick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+            }
+        };
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
 
@@ -84,5 +95,9 @@ public class AlarmActivity extends AppCompatActivity {
                 sendBroadcast(my_intent);
             }
         });
+        btnback = (Button) findViewById(R.id.btnback);
+        btnback.setOnClickListener(btnclick);
     }
+
+
 }

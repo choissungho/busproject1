@@ -15,7 +15,7 @@
         android:layout_width="300dp"
         android:layout_height="440dp"
         android:layout_gravity="right"
-        android:background="@drawable/img2" />
+        android:background="@drawable/sa" />
 
     <Button
         android:id="@+id/daMainClickListner"

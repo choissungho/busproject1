@@ -239,7 +239,6 @@ public class MainActivity extends Activity {
 
 
         Nowtime.setTextColor(Color.GREEN);
-
         AnyangBtn.setOnClickListener(bust1);
         BeomgyeBtn.setOnClickListener(bust2);
         DaelimaBtn.setOnClickListener(bust3);

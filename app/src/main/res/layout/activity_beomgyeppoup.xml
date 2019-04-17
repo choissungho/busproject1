@@ -15,7 +15,7 @@
         android:layout_width="300dp"
         android:layout_height="440dp"
         android:layout_gravity="right"
-        android:background="@drawable/img4" />
+        android:background="@drawable/bs" />
 
     <Button
         android:id="@+id/bMainClickListner"
