@@ -23,7 +23,7 @@ public class AlarmActivity extends AppCompatActivity {
     PendingIntent pendingIntent;
     Button btnback;
     @Override
-
+//ss
 
     protected void onCreate(Bundle savedInstanceState) {
 
