@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:layout_centerHorizontal="true"
     android:layout_gravity="center"
-    tools:context=".AnyangpopupActivity">
+    tools:context=".popup1Activity">
 
 
     <ImageView
@@ -15,15 +15,15 @@
         android:layout_width="300dp"
         android:layout_height="440dp"
         android:layout_gravity="right"
-        android:background="@drawable/img1" />
-
+        android:background="@drawable/clock" />
     <Button
-        android:id="@+id/aMainBack"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:text="뒤로"
+        android:id="@+id/back1"
         android:layout_marginLeft="-303dp"
         android:layout_marginTop="450dp"
-        android:text="뒤로" />
+        android:layout_width="80dp"
+        android:layout_height="50dp" />
+
 
 
 </LinearLayout>
