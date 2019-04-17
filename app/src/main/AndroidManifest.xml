@@ -13,15 +13,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AlarmActivity"></activity>
         <activity
-            android:name=".BeomgyepopupActivity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".DaelimBpopupActivity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
-            android:name=".DaelimApopupActivity"
-            android:theme="@android:style/Theme.Dialog" />
-        <activity
             android:name=".AnyangpopupActivity"
             android:theme="@android:style/Theme.Dialog" />
         <activity android:name=".IntroActivity">

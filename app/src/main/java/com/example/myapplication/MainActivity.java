@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
     Timer mTimer;
 
     TextView Nowtime;
-    Button AnyangBtn, bt2, DaelimaBtn, bt4, DaelimbBtn, bt6, BeomgyeBtn, bt8;
+    Button AnyangBtn, TimeTable, DaelimaBtn,  DaelimbBtn,  BeomgyeBtn;
     ImageView alarm;
 
     ArrayList<String> AnyangBustime = new ArrayList<>();
@@ -41,29 +41,7 @@ public class MainActivity extends Activity {
         }
     };
 
-    View.OnClickListener pop1 = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), DaelimApopupActivity.class);
-            startActivity(i);
-        }
-    };
 
-    View.OnClickListener pop2 = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), DaelimBpopupActivity.class);
-            startActivity(i);
-        }
-    };
-
-    View.OnClickListener pop3 = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), BeomgyepopupActivity.class);
-            startActivity(i);
-        }
-    };
 
 
     View.OnClickListener alarm1 = new View.OnClickListener() {
@@ -219,23 +197,20 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         AnyangBtn = (Button) findViewById(R.id.AnyangBtn);
-        bt2 = (Button) findViewById(R.id.bt2);
+        TimeTable = (Button) findViewById(R.id.TimeTable);
         DaelimaBtn = (Button) findViewById(R.id.DaelimaBtn);
-        bt4 = (Button) findViewById(R.id.bt4);
+
         DaelimbBtn = (Button) findViewById(R.id.DaelimbBtn);
-        bt6 = (Button) findViewById(R.id.bt6);
+
         BeomgyeBtn = (Button) findViewById(R.id.BeomgyeBtn);
-        bt8 = (Button) findViewById(R.id.bt8);
 
 
         Nowtime = (TextView) findViewById(R.id.Nowtime);
         TimeTv = (TextView) findViewById(R.id.TimeTv);
 
 
-        bt2.setOnClickListener(pop);
-        bt4.setOnClickListener(pop1);
-        bt6.setOnClickListener(pop2);
-        bt8.setOnClickListener(pop3);
+        TimeTable.setOnClickListener(pop);
+
 
 
         Nowtime.setTextColor(Color.GREEN);
