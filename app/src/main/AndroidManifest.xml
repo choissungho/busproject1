@@ -11,7 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AlarmActivity"></activity>
+        <activity android:name=".AnyangInfoActivity">
+
+
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDFI7AlB7nk6rgbwP72kTe1NSthqYSJ-MM" />
+
+        <activity android:name=".AlarmActivity" />
         <activity
             android:name=".AnyangpopupActivity"
             android:theme="@android:style/Theme.Dialog" />
@@ -23,11 +33,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+
         <receiver android:name=".AlarmReciver" />
 
         <service
             android:name=".RingtonePlayingService"
-            android:enabled="true"></service>
+            android:enabled="true" />
     </application>
 
 </manifest>
