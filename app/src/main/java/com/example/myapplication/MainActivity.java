@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
     TextView Nowtime;
     Button AnyangBtn, TimeTable, DaelimaBtn,  DaelimbBtn,  BeomgyeBtn;
     ImageView alarm;
+    ImageView Timetable;
 
     ArrayList<String> AnyangBustime = new ArrayList<>();
     ArrayList<String> BeomgyeBustime = new ArrayList<>();
@@ -197,7 +198,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         AnyangBtn = (Button) findViewById(R.id.AnyangBtn);
-        TimeTable = (Button) findViewById(R.id.TimeTable);
+
         DaelimaBtn = (Button) findViewById(R.id.DaelimaBtn);
 
         DaelimbBtn = (Button) findViewById(R.id.DaelimbBtn);
@@ -208,8 +209,8 @@ public class MainActivity extends Activity {
         Nowtime = (TextView) findViewById(R.id.Nowtime);
         TimeTv = (TextView) findViewById(R.id.TimeTv);
 
-
-        TimeTable.setOnClickListener(pop);
+        Timetable = (ImageView) findViewById(R.id.Timetable);
+        Timetable.setOnClickListener(pop);
 
 
 
