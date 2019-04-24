@@ -33,15 +33,17 @@
             android:id="@+id/AnyangBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/blue"
+            android:background="@drawable/btblue"
             android:text=" 안양역→대림대" />
 
-        <Button
+        <ImageView
+            android:layout_marginTop="10dp"
             android:id="@+id/Ainfo"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:background="@drawable/blue"
-            android:text=" 위치정보" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map" />
+
+
 
     </LinearLayout>
 
@@ -54,15 +56,15 @@
             android:id="@+id/BeomgyeBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/blue"
+            android:background="@drawable/btblue"
             android:text=" 범계역→대림대" />
-        <Button
-            android:id="@+id/Binfo"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:background="@drawable/blue"
-            android:text=" 위치정보" />
 
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/Binfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map" />
 
 
     </LinearLayout>
@@ -76,16 +78,16 @@
             android:id="@+id/DaelimbBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/blue"
+            android:background="@drawable/btblue"
             android:text=" 대림대→범계역" />
 
-        <Button
-            android:id="@+id/Dbinfo"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:background="@drawable/blue"
-            android:text=" 위치정보" />
 
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/Dbinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,15 +99,15 @@
             android:id="@+id/DaelimaBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/blue"
+            android:background="@drawable/btblue"
             android:text=" 대림대→안양역" />
-        <Button
-            android:id="@+id/Dainfo"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:background="@drawable/blue"
-            android:text=" 위치정보" />
 
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/Dainfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map" />
 
     </LinearLayout>
 
@@ -125,6 +127,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="280dp"
         android:src="@drawable/clock" />
+
+    <ImageView
+        android:id="@+id/Timetable"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timetable" />
 
 
 </LinearLayout>
