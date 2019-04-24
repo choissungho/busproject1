@@ -21,9 +21,9 @@ public class AlarmActivity extends AppCompatActivity {
     TimePicker alarm_timepicker;
     Context context;
     PendingIntent pendingIntent;
-    Button btnback;
+
     @Override
-//sssd
+
 
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -95,8 +95,7 @@ public class AlarmActivity extends AppCompatActivity {
                 sendBroadcast(my_intent);
             }
         });
-        btnback = (Button) findViewById(R.id.btnback);
-        btnback.setOnClickListener(btnclick);
+
     }
 
 

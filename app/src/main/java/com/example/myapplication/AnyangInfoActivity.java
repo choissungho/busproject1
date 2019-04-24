@@ -21,7 +21,7 @@ public class AnyangInfoActivity extends AppCompatActivity
         setContentView(R.layout.activity_anyang_info);
 
         FragmentManager fragmentManager = getFragmentManager();
-        MapFragment mapFragment = (MapFragment)fragmentManager
+        MapFragment mapFragment = (MapFragment) fragmentManager
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
@@ -29,7 +29,7 @@ public class AnyangInfoActivity extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap map) {
 
-        LatLng Anyang = new LatLng(37.40106561421763,  126.92388921452297);
+        LatLng Anyang = new LatLng(37.40106561421763, 126.92388921452297);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(Anyang);

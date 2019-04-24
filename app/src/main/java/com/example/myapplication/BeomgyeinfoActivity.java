@@ -21,7 +21,7 @@ public class BeomgyeinfoActivity extends AppCompatActivity
         setContentView(R.layout.activity_beomgye_info);
 
         FragmentManager fragmentManager = getFragmentManager();
-        MapFragment mapFragment = (MapFragment)fragmentManager
+        MapFragment mapFragment = (MapFragment) fragmentManager
                 .findFragmentById(R.id.beomgye);
         mapFragment.getMapAsync(this);
     }
@@ -29,7 +29,7 @@ public class BeomgyeinfoActivity extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap map) {
 
-        LatLng Beomgye = new LatLng( 37.3905509157291,   126.94957334132637);
+        LatLng Beomgye = new LatLng(37.3905509157291, 126.94957334132637);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(Beomgye);

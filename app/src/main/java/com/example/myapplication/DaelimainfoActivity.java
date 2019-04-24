@@ -21,7 +21,7 @@ public class DaelimainfoActivity extends AppCompatActivity
         setContentView(R.layout.activity_daelima_info);
 
         FragmentManager fragmentManager = getFragmentManager();
-        MapFragment mapFragment = (MapFragment)fragmentManager
+        MapFragment mapFragment = (MapFragment) fragmentManager
                 .findFragmentById(R.id.daelim);
         mapFragment.getMapAsync(this);
     }
@@ -29,7 +29,7 @@ public class DaelimainfoActivity extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap map) {
 
-        LatLng Daelim = new LatLng( 37.40248427302206,   126.93047517343723);
+        LatLng Daelim = new LatLng(37.40248427302206, 126.93047517343723);
 
         MarkerOptions markerOptions = new MarkerOptions();
         markerOptions.position(Daelim);

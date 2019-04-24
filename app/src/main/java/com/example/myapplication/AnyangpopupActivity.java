@@ -8,7 +8,6 @@ import android.widget.Button;
 
 public class AnyangpopupActivity extends Activity {
 
-    Button aMainBack;
 
     View.OnClickListener MainClickListner = new View.OnClickListener() {
         @Override
@@ -22,9 +21,6 @@ public class AnyangpopupActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_anyangpopup);
-
-        aMainBack = findViewById(R.id.aMainBack);
-        aMainBack.setOnClickListener(MainClickListner);
 
 
     }

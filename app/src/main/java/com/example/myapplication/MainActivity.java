@@ -25,8 +25,8 @@ public class MainActivity extends Activity {
     Timer mTimer;
 
     TextView Nowtime;
-    Button AnyangBtn, DaelimaBtn,  DaelimbBtn,  BeomgyeBtn;
-    ImageView alarm,Ainfo,Binfo,Dbinfo,Dainfo;
+    Button AnyangBtn, DaelimaBtn, DaelimbBtn, BeomgyeBtn;
+    ImageView alarm, Ainfo, Binfo, Dbinfo, Dainfo;
     ImageView Timetable;
 
     ArrayList<String> AnyangBustime = new ArrayList<>();
@@ -66,7 +66,6 @@ public class MainActivity extends Activity {
             startActivity(w);
         }
     };
-
 
 
     View.OnClickListener alarm1 = new View.OnClickListener() {
@@ -532,12 +531,6 @@ public class MainActivity extends Activity {
     protected void onDestroy() {
         mTimer.cancel();
         super.onDestroy();
-    }
-
-    @Override
-    protected void onPause() {
-        mTimer.cancel();
-        super.onPause();
     }
 
 

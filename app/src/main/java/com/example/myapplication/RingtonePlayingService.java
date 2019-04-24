@@ -67,9 +67,9 @@ public class RingtonePlayingService extends Service {
         }
 
         // 알람음 재생 X , 알람음 시작 클릭
-        if(!this.isRunning && startId == 1) {
+        if (!this.isRunning && startId == 1) {
 
-            mediaPlayer = MediaPlayer.create(this,R.raw.ouu);
+            mediaPlayer = MediaPlayer.create(this, R.raw.ouu);
             mediaPlayer.start();
 
             this.isRunning = true;
@@ -77,7 +77,7 @@ public class RingtonePlayingService extends Service {
         }
 
         // 알람음 재생 O , 알람음 종료 버튼 클릭
-        else if(this.isRunning && startId == 0) {
+        else if (this.isRunning && startId == 0) {
 
             mediaPlayer.stop();
             mediaPlayer.reset();
@@ -88,7 +88,7 @@ public class RingtonePlayingService extends Service {
         }
 
         // 알람음 재생 X , 알람음 종료 버튼 클릭
-        else if(!this.isRunning && startId == 0) {
+        else if (!this.isRunning && startId == 0) {
 
             this.isRunning = false;
             this.startId = 0;
@@ -96,13 +96,11 @@ public class RingtonePlayingService extends Service {
         }
 
         // 알람음 재생 O , 알람음 시작 버튼 클릭
-        else if(this.isRunning && startId == 1){
+        else if (this.isRunning && startId == 1) {
 
             this.isRunning = true;
             this.startId = 1;
-        }
-
-        else {
+        } else {
         }
         return START_NOT_STICKY;
     }

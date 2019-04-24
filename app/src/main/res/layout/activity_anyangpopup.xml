@@ -21,34 +21,27 @@
             android:background="@drawable/as" />
 
 
-
-
         <ImageView
-            android:layout_marginTop="50dp"
             android:layout_width="300dp"
             android:layout_height="440dp"
             android:layout_gravity="right"
+            android:layout_marginTop="50dp"
             android:background="@drawable/bs" />
 
         <ImageView
-            android:layout_marginTop="50dp"
             android:layout_width="300dp"
             android:layout_height="440dp"
             android:layout_gravity="right"
+            android:layout_marginTop="50dp"
             android:background="@drawable/sb" />
 
         <ImageView
-            android:layout_marginTop="50dp"
             android:layout_width="300dp"
             android:layout_height="440dp"
             android:layout_gravity="right"
+            android:layout_marginTop="50dp"
             android:background="@drawable/sa" />
 
-        <Button
-            android:id="@+id/aMainBack"
-            android:layout_width="80dp"
-            android:layout_height="50dp"
-            android:text="뒤로" />
 
     </LinearLayout>
 
