@@ -12,33 +12,32 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-public class AnyangInfoActivity extends AppCompatActivity
+public class DaelimainfoActivity extends AppCompatActivity
         implements OnMapReadyCallback {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anyang_info);
+        setContentView(R.layout.activity_daelima_info);
 
         FragmentManager fragmentManager = getFragmentManager();
         MapFragment mapFragment = (MapFragment)fragmentManager
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.daelim);
         mapFragment.getMapAsync(this);
     }
 
     @Override
     public void onMapReady(final GoogleMap map) {
 
-        LatLng Anyang = new LatLng(37.40106561421763,  126.92388921452297);
+        LatLng Daelim = new LatLng( 37.40248427302206,   126.93047517343723);
 
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(Anyang);
-        markerOptions.title("안양");
-        markerOptions.snippet("얀양 버스");
+        markerOptions.position(Daelim);
+        markerOptions.title("대림");
+        markerOptions.snippet("대림 버스");
         map.addMarker(markerOptions);
 
-        map.animateCamera(CameraUpdateFactory.newLatLngZoom(Anyang, 13));
-//        map.animateCamera(CameraUpdateFactory.zoomTo(13));
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(Daelim, 13));
     }
 
 }

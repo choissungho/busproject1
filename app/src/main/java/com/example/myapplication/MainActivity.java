@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
     ArrayList<String> Daelimabustime = new ArrayList<>();
     ArrayList<String> DaelimbBustime = new ArrayList<>();
 
-    View.OnClickListener pop = new View.OnClickListener() {
+    View.OnClickListener Anyangbusinfo = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             Intent i = new Intent(getApplicationContext(), AnyangInfoActivity.class);
@@ -42,6 +42,21 @@ public class MainActivity extends Activity {
         }
     };
 
+    View.OnClickListener Beomgyebusinfo = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent w = new Intent(getApplicationContext(), BeomgyeinfoActivity.class);
+            startActivity(w);
+        }
+    };
+
+    View.OnClickListener Daelimbusinfo = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent w = new Intent(getApplicationContext(), DaelimainfoActivity.class);
+            startActivity(w);
+        }
+    };
 
 
 
@@ -213,9 +228,10 @@ public class MainActivity extends Activity {
         Binfo = (Button) findViewById(R.id.Binfo);
         Dainfo = (Button) findViewById(R.id.Dainfo);
         Dbinfo = (Button) findViewById(R.id.Dbinfo);
-        Ainfo.setOnClickListener(pop);
-
-
+        Ainfo.setOnClickListener(Anyangbusinfo);
+        Binfo.setOnClickListener(Beomgyebusinfo);
+        Dainfo.setOnClickListener(Daelimbusinfo);
+        Dbinfo.setOnClickListener(Daelimbusinfo);
 
         Nowtime.setTextColor(Color.GREEN);
         AnyangBtn.setOnClickListener(bust1);
