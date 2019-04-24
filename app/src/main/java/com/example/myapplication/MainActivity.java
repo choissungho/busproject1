@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
     Timer mTimer;
 
     TextView Nowtime;
-    Button AnyangBtn, TimeTable, DaelimaBtn,  DaelimbBtn,  BeomgyeBtn;
+    Button AnyangBtn, Ainfo,Binfo,Dbinfo,Dainfo, DaelimaBtn,  DaelimbBtn,  BeomgyeBtn;
     ImageView alarm;
     ImageView Timetable;
 
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
     View.OnClickListener pop = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), AnyangpopupActivity.class);
+            Intent i = new Intent(getApplicationContext(), AnyangInfoActivity.class);
             startActivity(i);
         }
     };
@@ -209,8 +209,11 @@ public class MainActivity extends Activity {
         Nowtime = (TextView) findViewById(R.id.Nowtime);
         TimeTv = (TextView) findViewById(R.id.TimeTv);
 
-        Timetable = (ImageView) findViewById(R.id.Timetable);
-        Timetable.setOnClickListener(pop);
+        Ainfo = (Button) findViewById(R.id.Ainfo);
+        Binfo = (Button) findViewById(R.id.Binfo);
+        Dainfo = (Button) findViewById(R.id.Dainfo);
+        Dbinfo = (Button) findViewById(R.id.Dbinfo);
+        Ainfo.setOnClickListener(pop);
 
 
 

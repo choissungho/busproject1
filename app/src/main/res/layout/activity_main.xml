@@ -36,7 +36,12 @@
             android:background="@drawable/blue"
             android:text=" 안양역→대림대" />
 
-
+        <Button
+            android:id="@+id/Ainfo"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blue"
+            android:text=" 위치정보" />
 
     </LinearLayout>
 
@@ -51,6 +56,12 @@
             android:layout_height="60dp"
             android:background="@drawable/blue"
             android:text=" 범계역→대림대" />
+        <Button
+            android:id="@+id/Binfo"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blue"
+            android:text=" 위치정보" />
 
 
 
@@ -68,6 +79,12 @@
             android:background="@drawable/blue"
             android:text=" 대림대→범계역" />
 
+        <Button
+            android:id="@+id/Dbinfo"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blue"
+            android:text=" 위치정보" />
 
     </LinearLayout>
 
@@ -82,6 +99,12 @@
             android:layout_height="60dp"
             android:background="@drawable/blue"
             android:text=" 대림대→안양역" />
+        <Button
+            android:id="@+id/Dainfo"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blue"
+            android:text=" 위치정보" />
 
 
     </LinearLayout>
@@ -103,11 +126,7 @@
         android:layout_marginLeft="280dp"
         android:src="@drawable/clock" />
 
-    <ImageView
-        android:id="@+id/Timetable"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/timetable" />
+
 </LinearLayout>
 
 

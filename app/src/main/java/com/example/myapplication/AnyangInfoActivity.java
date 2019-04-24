@@ -29,16 +29,16 @@ public class AnyangInfoActivity extends AppCompatActivity
     @Override
     public void onMapReady(final GoogleMap map) {
 
-        LatLng SEOUL = new LatLng(37.56, 126.97);
+        LatLng Anyang = new LatLng(37.40106561421763,  126.92388921452297);
 
         MarkerOptions markerOptions = new MarkerOptions();
-        markerOptions.position(SEOUL);
-        markerOptions.title("서울");
-        markerOptions.snippet("한국의 수도");
+        markerOptions.position(Anyang);
+        markerOptions.title("안양");
+        markerOptions.snippet("얀양 버스");
         map.addMarker(markerOptions);
 
-        map.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
-        map.animateCamera(CameraUpdateFactory.zoomTo(10));
+        map.moveCamera(CameraUpdateFactory.newLatLng(Anyang));
+        map.animateCamera(CameraUpdateFactory.zoomTo(13));
     }
 
 }
