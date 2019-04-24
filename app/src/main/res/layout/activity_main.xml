@@ -36,12 +36,7 @@
             android:background="@drawable/blue"
             android:text=" 안양역→대림대" />
 
-        <Button
-            android:id="@+id/TimeTable"
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:background="@drawable/blue"
-            android:text="시간표" />
+
 
     </LinearLayout>
 
@@ -98,13 +93,23 @@
         android:text="버스가 만차일 경우 운행시간 보다 먼저 출발 할 수 있으니 다음 운행 차량을 이용바랍니다."
         android:textColor="#FF0000" />
 
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/alarm"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="340dp"
+        android:layout_marginLeft="280dp"
         android:src="@drawable/clock" />
+
+    <ImageView
+        android:id="@+id/Timetable"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timetable" />
+</LinearLayout>
+
 
 
 </LinearLayout>

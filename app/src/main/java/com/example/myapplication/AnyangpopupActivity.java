@@ -25,5 +25,7 @@ public class AnyangpopupActivity extends Activity {
 
         aMainBack = findViewById(R.id.aMainBack);
         aMainBack.setOnClickListener(MainClickListner);
+
+
     }
 }
