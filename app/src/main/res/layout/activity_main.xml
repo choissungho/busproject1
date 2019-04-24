@@ -134,6 +134,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/timetable" />
 
+<!--SHA1: B3:FD:55:DC:9F:3E:CC:11:54:47:B3:7D:5B:72:22:6D:07:99:96:17-->
 
     </LinearLayout>
 
