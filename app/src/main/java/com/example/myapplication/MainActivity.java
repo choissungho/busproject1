@@ -6,6 +6,9 @@ import android.graphics.Color;
 import android.os.Handler;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -27,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView Nowtime;
     Button AnyangBtn, DaelimaBtn, DaelimbBtn, BeomgyeBtn;
-    ImageView alarm, Ainfo;
-    ImageView Timetable;
+
 
     ArrayList<String> AnyangBustime = new ArrayList<>();
     ArrayList<String> BeomgyeBustime = new ArrayList<>();
@@ -36,33 +38,13 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> DaelimbBustime = new ArrayList<>();
 
 
-    View.OnClickListener pop = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), AnyangpopupActivity.class);
-            startActivity(i);
-        }
-    };
-
-    View.OnClickListener Anyangbusinfo = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), AnyangInfoActivity.class);
-            startActivity(i);
-        }
-    };
 
 
 
 
 
-    View.OnClickListener alarm1 = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent i = new Intent(getApplicationContext(), AlarmActivity.class);
-            startActivity(i);
-        }
-    };
+
+
 
 
     View.OnClickListener bust1 = new View.OnClickListener() {
@@ -220,9 +202,7 @@ public class MainActivity extends AppCompatActivity {
         Nowtime = (TextView) findViewById(R.id.Nowtime);
         TimeTv = (TextView) findViewById(R.id.TimeTv);
 
-        Ainfo = (ImageView) findViewById(R.id.Ainfo);
 
-        Ainfo.setOnClickListener(Anyangbusinfo);
 
 
         Nowtime.setTextColor(Color.GREEN);
@@ -231,11 +211,7 @@ public class MainActivity extends AppCompatActivity {
         DaelimaBtn.setOnClickListener(bust3);
         DaelimbBtn.setOnClickListener(bust4);
 
-        Timetable = (ImageView) findViewById(R.id.Timetable);
-        Timetable.setOnClickListener(pop);
 
-        alarm = (ImageView) findViewById(R.id.alarm);
-        alarm.setOnClickListener(alarm1);
 
         MainTimerTask timerTask = new MainTimerTask();
         mTimer = new Timer();
@@ -517,5 +493,31 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.mainmenu,menu);
+        return true;
+    }
 
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.map:
+           Intent maps = new Intent(MainActivity.this,AnyangInfoActivity.class);
+           startActivity(maps);
+                return true;
+            case R.id.table:
+                Intent table = new Intent(MainActivity.this,AnyangpopupActivity.class);
+                startActivity(table);
+                return true;
+            case R.id.clock:
+                Intent clocks = new Intent(MainActivity.this,AlarmActivity.class);
+                startActivity(clocks);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

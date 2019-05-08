@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/map"
+        app:showAsAction="always"
+        android:title="map"
+        android:icon="@drawable/map">
+    </item>
+    <item
+        android:id="@+id/table"
+        app:showAsAction="always"
+        android:title="table"
+        android:icon="@drawable/timetable">
+    </item>
+    <item
+        android:id="@+id/clock"
+        app:showAsAction="always"
+        android:title="clock"
+        android:icon="@drawable/clock">
+    </item>
+</menu>
