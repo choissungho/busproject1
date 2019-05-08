@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 
     TextView Nowtime;
     Button AnyangBtn, DaelimaBtn, DaelimbBtn, BeomgyeBtn;
-    ImageView alarm, Ainfo, Binfo, Dbinfo, Dainfo;
+    ImageView alarm, Ainfo;
     ImageView Timetable;
 
     ArrayList<String> AnyangBustime = new ArrayList<>();
@@ -51,21 +51,8 @@ public class MainActivity extends Activity {
         }
     };
 
-    View.OnClickListener Beomgyebusinfo = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent w = new Intent(getApplicationContext(), BeomgyeinfoActivity.class);
-            startActivity(w);
-        }
-    };
 
-    View.OnClickListener Daelimbusinfo = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent w = new Intent(getApplicationContext(), DaelimainfoActivity.class);
-            startActivity(w);
-        }
-    };
+
 
 
     View.OnClickListener alarm1 = new View.OnClickListener() {
@@ -233,13 +220,9 @@ public class MainActivity extends Activity {
         TimeTv = (TextView) findViewById(R.id.TimeTv);
 
         Ainfo = (ImageView) findViewById(R.id.Ainfo);
-        Binfo = (ImageView) findViewById(R.id.Binfo);
-        Dainfo = (ImageView) findViewById(R.id.Dainfo);
-        Dbinfo = (ImageView) findViewById(R.id.Dbinfo);
+
         Ainfo.setOnClickListener(Anyangbusinfo);
-        Binfo.setOnClickListener(Beomgyebusinfo);
-        Dainfo.setOnClickListener(Daelimbusinfo);
-        Dbinfo.setOnClickListener(Daelimbusinfo);
+
 
         Nowtime.setTextColor(Color.GREEN);
         AnyangBtn.setOnClickListener(bust1);

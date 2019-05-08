@@ -58,12 +58,7 @@
             android:background="@drawable/btblue"
             android:text=" 범계역→대림대" />
 
-        <ImageView
-            android:id="@+id/Binfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/map" />
+
 
 
     </LinearLayout>
@@ -81,12 +76,6 @@
             android:text=" 대림대→범계역" />
 
 
-        <ImageView
-            android:id="@+id/Dbinfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/map" />
     </LinearLayout>
 
     <LinearLayout
@@ -101,12 +90,7 @@
             android:background="@drawable/btblue"
             android:text=" 대림대→안양역" />
 
-        <ImageView
-            android:id="@+id/Dainfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/map" />
+
 
     </LinearLayout>
 

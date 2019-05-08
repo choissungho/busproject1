@@ -12,8 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".DaelimainfoActivity"></activity>
-        <activity android:name=".BeomgyeinfoActivity"></activity>
         <activity android:name=".AnyangInfoActivity"></activity>
 
         <meta-data
