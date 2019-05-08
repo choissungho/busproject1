@@ -36,12 +36,7 @@
             android:background="@drawable/btblue"
             android:text=" 안양역→대림대" />
 
-        <ImageView
-            android:id="@+id/Ainfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/map" />
+
 
 
     </LinearLayout>
@@ -106,10 +101,16 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/alarm"
-            android:layout_width="50dp"
+            android:layout_marginLeft="220dp"
+            android:id="@+id/Ainfo"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="280dp"
+            android:src="@drawable/map" />
+
+        <ImageView
+            android:id="@+id/alarm"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/clock" />
 
         <ImageView
@@ -118,7 +119,6 @@
             android:layout_height="wrap_content"
             android:src="@drawable/timetable" />
 
-<!--SHA1: B3:FD:55:DC:9F:3E:CC:11:54:47:B3:7D:5B:72:22:6D:07:99:96:17-->
 
     </LinearLayout>
 
