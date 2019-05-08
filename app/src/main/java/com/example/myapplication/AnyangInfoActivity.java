@@ -35,6 +35,7 @@ public class AnyangInfoActivity extends AppCompatActivity
         markerOptions.position(Anyang);
         markerOptions.title("안양");
         markerOptions.snippet("얀양 버스");
+
         map.addMarker(markerOptions);
 
         LatLng Beomgye = new LatLng(37.3905509157291, 126.94957334132637);
