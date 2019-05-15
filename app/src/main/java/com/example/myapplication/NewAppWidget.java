@@ -22,9 +22,13 @@ public class NewAppWidget extends AppWidgetProvider {
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
         views.setTextViewText(R.id.anYang, widgetText);
+        //리시버 사용
+        Intent intent = new Intent(context,MyReceiver.class);
+        intent.setAction(MyReceiver.MY_ACTION);
 
-        Intent intent = new Intent(context, MainActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
 
         views.setOnClickPendingIntent(R.id.anYang, pendingIntent);
         // Instruct the widget manager to update the widget
