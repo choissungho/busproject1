@@ -18,17 +18,20 @@ public class NewAppWidget extends AppWidgetProvider {
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
 
-        CharSequence widgetText = "대림대 -> 안양역";
+        CharSequence widgetText = "안양역→대림대";
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
         views.setTextViewText(R.id.anYang, widgetText);
         //리시버 사용
-        Intent intent = new Intent(context,MyReceiver.class);
-        intent.setAction(MyReceiver.MY_ACTION);
+        Intent intent3 = new Intent(context,MyReceiver.class);
+            intent3.putExtra("id","안양역→대림대");
+
+
+        intent3.setAction(MyReceiver.MY_ACTION);
 
 
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent3, 0);
 
         views.setOnClickPendingIntent(R.id.anYang, pendingIntent);
         // Instruct the widget manager to update the widget

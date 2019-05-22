@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.arch.persistence.room.Room;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -16,8 +17,16 @@ public class MyReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+
+
         if(MY_ACTION.equals(intent.getAction())){
-            Toast.makeText(context,"aaa",Toast.LENGTH_SHORT).show();
+            AppDatabase db = Room.databaseBuilder(context,
+                    AppDatabase.class, "database-name")
+                    .allowMainThreadQueries()
+                    .build();
+
+
+                    Toast.makeText(context,db.busTimeDao().getAll("안양역→대림대").get(0).toString(),Toast.LENGTH_SHORT).show();
         }
 
     }
