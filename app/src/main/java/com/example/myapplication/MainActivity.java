@@ -18,6 +18,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Date curDate = new Date();
-            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss");
+            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
             String currentTime = now.format(curDate);
 
 
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
                     Nowtime.startAnimation(anim);
                     break;
-                } else if (compare < 0) {
+                } else {
                     Nowtime.setText("없음");
                     Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
                     Nowtime.startAnimation(anim);
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Date curDate = new Date();
-            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss");
+            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss",Locale.getDefault());
             String currentTime = now.format(curDate);
 
 
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
                     Nowtime.startAnimation(anim);
                     break;
-                } else if (compare < 0) {
+                } else {
                     Nowtime.setText("없음");
                     Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
                     Nowtime.startAnimation(anim);
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Date curDate = new Date();
-            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss");
+            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss",Locale.getDefault());
             String currentTime = now.format(curDate);
 
 
@@ -140,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                     Nowtime.startAnimation(anim);
 
                     break;
-                } else if (compare < 0) {
+                } else   {
                     Nowtime.setText("없음");
                     Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
                     Nowtime.startAnimation(anim);
@@ -153,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Date curDate = new Date();
-            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss");
+            SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss",Locale.getDefault());
             String currentTime = now.format(curDate);
 
 
@@ -173,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                     Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
                     Nowtime.startAnimation(anim);
                     break;
-                } else if (compare < 0) {
+                } else  {
                     Nowtime.setText("없음");
                     Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
                     Nowtime.startAnimation(anim);
@@ -189,17 +190,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AnyangBtn = (Button) findViewById(R.id.AnyangBtn);
+        AnyangBtn = findViewById(R.id.AnyangBtn);
 
-        DaelimaBtn = (Button) findViewById(R.id.DaelimaBtn);
+        DaelimaBtn = findViewById(R.id.DaelimaBtn);
 
-        DaelimbBtn = (Button) findViewById(R.id.DaelimbBtn);
+        DaelimbBtn = findViewById(R.id.DaelimbBtn);
 
-        BeomgyeBtn = (Button) findViewById(R.id.BeomgyeBtn);
+        BeomgyeBtn = findViewById(R.id.BeomgyeBtn);
 
 
-        Nowtime = (TextView) findViewById(R.id.Nowtime);
-        TimeTv = (TextView) findViewById(R.id.TimeTv);
+        Nowtime = findViewById(R.id.Nowtime);
+        TimeTv = findViewById(R.id.TimeTv);
 
 
 
@@ -482,7 +483,7 @@ public class MainActivity extends AppCompatActivity {
 
             Date rightNow = new Date();
             SimpleDateFormat formatter = new SimpleDateFormat(
-                    " HH:mm:ss ");
+                    " HH:mm:ss ",Locale.getDefault());
             String dateString = formatter.format(rightNow);
             TimeTv.setText(dateString);
 //시간구하기
