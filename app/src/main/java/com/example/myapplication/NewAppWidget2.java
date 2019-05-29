@@ -10,29 +10,31 @@ import android.widget.RemoteViews;
 /**
  * Implementation of App Widget functionality.
  */
-public class NewAppWidget extends AppWidgetProvider {
-
-
+public class NewAppWidget2 extends AppWidgetProvider {
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
 
-        CharSequence widgetText = "안양역→대림대";
+        CharSequence widgetText = "범계역 ->대림대";
         // Construct the RemoteViews object
-        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget);
-        views.setTextViewText(R.id.anYang, widgetText);
-        //리시버 사용
-        Intent intent = new Intent(context,MyReceiver.class);
-        intent.setAction(MyReceiver.MY_ACTION);
-        intent.putExtra("id","안양역→대림대");
+        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget2);
+        views.setTextViewText(R.id.bum, widgetText);
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
+        Intent intent3 = new Intent(context,MyReceiver.class);
+        intent3.putExtra("id","범계역 ->대림대");
+
+
+        intent3.setAction(MyReceiver.MY_ACTION);
+
+
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent3, 0);
 
         views.setOnClickPendingIntent(R.id.anYang, pendingIntent);
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
-
     }
+
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
@@ -51,11 +53,5 @@ public class NewAppWidget extends AppWidgetProvider {
     public void onDisabled(Context context) {
         // Enter relevant functionality for when the last widget is disabled
     }
-
-
-
-
-
-
 }
 
