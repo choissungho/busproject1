@@ -34,7 +34,7 @@
             android:id="@+id/AnyangBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/btblue"
+            android:background="@drawable/btb"
             android:text=" 안양역→대림대" />
 
 
@@ -52,7 +52,7 @@
             android:id="@+id/BeomgyeBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/btblue"
+            android:background="@drawable/btb"
             android:text=" 범계역→대림대" />
 
 
@@ -70,7 +70,7 @@
             android:id="@+id/DaelimbBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/btblue"
+            android:background="@drawable/btb"
             android:text=" 대림대→범계역" />
 
 
@@ -86,7 +86,7 @@
             android:id="@+id/DaelimaBtn"
             android:layout_width="150dp"
             android:layout_height="60dp"
-            android:background="@drawable/btblue"
+            android:background="@drawable/btb"
             android:text=" 대림대→안양역" />
 
 
@@ -94,6 +94,7 @@
     </LinearLayout>
 
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

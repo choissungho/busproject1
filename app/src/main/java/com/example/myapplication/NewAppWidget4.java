@@ -15,7 +15,7 @@ public class NewAppWidget4 extends AppWidgetProvider {
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
 
-        CharSequence widgetText = "대림대→범계역";
+        CharSequence widgetText = "";
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget4);
         views.setTextViewText(R.id.bum2, widgetText);
