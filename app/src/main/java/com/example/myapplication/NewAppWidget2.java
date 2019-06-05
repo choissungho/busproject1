@@ -20,17 +20,17 @@ public class NewAppWidget2 extends AppWidgetProvider {
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.new_app_widget2);
         views.setTextViewText(R.id.bum, widgetText);
 
-        Intent intent3 = new Intent(context,MyReceiver.class);
-        intent3.putExtra("id","범계역 ->대림대");
-
-
-        intent3.setAction(MyReceiver.MY_ACTION);
+        Intent intent = new Intent(context,MyReceiver2.class);
 
 
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent3, 0);
+        intent.setAction(MyReceiver2.MY_ACTION2);
 
-        views.setOnClickPendingIntent(R.id.anYang, pendingIntent);
+
+
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
+
+        views.setOnClickPendingIntent(R.id.bum, pendingIntent);
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
     }

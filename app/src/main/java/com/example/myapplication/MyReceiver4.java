@@ -11,24 +11,16 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class MyReceiver extends BroadcastReceiver {
-
-
-    public static final String MY_ACTION = "com.example.busreceiver.action.ACTION_MY_BROADCAST";
-
-
-
-
+public class MyReceiver4 extends BroadcastReceiver {
+    public static final String MY_ACTION4 = "com.example.busreceiver.action.ACTION_MY_BROADCAST";
     @Override
     public void onReceive(Context context, Intent intent) {
-
-
         Date curDate = new Date();
         SimpleDateFormat now = new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
         String currentTime = now.format(curDate);
 
 
-        if (MY_ACTION.equals(intent.getAction())) {
+        if (MY_ACTION4.equals(intent.getAction())) {
 
             AppDatabase db = Room.databaseBuilder(context,
                     AppDatabase.class, "database-name")
@@ -36,7 +28,7 @@ public class MyReceiver extends BroadcastReceiver {
                     .build();
 
 
-            List<BusTime> busTimes = db.busTimeDao().getAll("안양역→대림대");
+            List<BusTime> busTimes = db.busTimeDao().getAll("대림대→범계역");
             boolean isNoAnswer = true;
             for (int i = 0; i < busTimes.size(); i++) {
                 String el = busTimes.get(i).toString();
@@ -54,9 +46,5 @@ public class MyReceiver extends BroadcastReceiver {
 
 
         }
-
     }
-
-
-
 }
