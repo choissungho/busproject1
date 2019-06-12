@@ -1,8 +1,7 @@
-# ONLINE TEST -> https://han.gl/WAFT
+# 대림대학교 셔틀 
 
 
-Need for me -> https://scadasystems.github.io/
-<br>[![Github](https://user-images.githubusercontent.com/38491289/55671914-e54cc900-58cf-11e9-8bd0-75fe11ce96ea.PNG)](https://github.com/scadasystems)
+<br>[![Github](https://user-images.githubusercontent.com/38491289/55671914-e54cc900-58cf-11e9-8bd0-75fe11ce96ea.PNG)](https://github.com/cjoisunghoo)
 ![show project](https://user-images.githubusercontent.com/38491289/55539064-c6490e00-56fa-11e9-8514-066251fd0093.PNG)
 
 ---
