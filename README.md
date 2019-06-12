@@ -30,5 +30,8 @@
 위젯
 
 ### 기존 어플과의 차이점
+기존의 알리미
 ![ss1](https://user-images.githubusercontent.com/48267116/59327914-ec57e380-8d25-11e9-9837-a0b2513b08c9.png)
+개발한 알리미
+![aaa](https://user-images.githubusercontent.com/48267116/59328461-66d53300-8d27-11e9-9971-bba3d5d40357.png)
 
