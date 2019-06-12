@@ -1,8 +1,7 @@
 # 대림대학교 셔틀 
 
 
-<br>[![logo](https://user-images.githubusercontent.com/48267116/59327044-58851800-8d23-11e9-8f99-54ea79c37b3d.png)
-](https://github.com/cjoisunghoo)
+<br>[![logo](https://user-images.githubusercontent.com/48267116/59327147-aa2da280-8d23-11e9-8c31-d0ae9144aad8.png)](https://github.com/cjoisunghoo)
 
 ---
 
