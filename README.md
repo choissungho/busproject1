@@ -1,7 +1,8 @@
 # 대림대학교 셔틀 
 
 
-<br>[![Github](https://user-images.githubusercontent.com/38491289/55671914-e54cc900-58cf-11e9-8bd0-75fe11ce96ea.PNG)](https://github.com/cjoisunghoo)
+<br>[![logo](https://user-images.githubusercontent.com/48267116/59327044-58851800-8d23-11e9-8f99-54ea79c37b3d.png)
+](https://github.com/cjoisunghoo)
 ![show project](https://user-images.githubusercontent.com/38491289/55539064-c6490e00-56fa-11e9-8514-066251fd0093.PNG)
 
 ---
@@ -64,16 +65,14 @@ World Adviser's help for Friendly Travel 의 약어로써
 ### Collaborators
 | Name | Email | Personal Site |
 | - | - | - |
-| 양윤모| redsmurf@lulzm.org | https://github.com/scadasystems?tab=repositories
-| 나광진 |  skrhkdwls77@gmail.com | https://github.com/NaKwangJin
-| 윤장원 | yunjang2@gmail.com | https://github.com/jangdoll
+| 오윤기| chlsh0681@gmail.com | https://github.com/Ohyoonki
+| 최성호 |  Ohyoonki@gmail.com | https://github.com/cjoisunghoo
 
 ### 담당분야
 | 이름 | 담당분야 | 수행역할 |
 | - | - | - 
-| 양윤모 | Back-end 개발 | JAVA / Kotlin 개발, Chatting 구현, 공공 API 및 Firebase 이용하여 DB 구성 
-| 윤장원 | Front-end 개발, 디자인 | 레이아웃 구성과 전반적인 디자인 구성
-|나광진 | Front-end 개발, 기획자 | 전반적인 구성 기획 및 메인, 메뉴 레이아웃 구성과 디자인
+| 오윤기 | Back-end 개발 | JAVA / , Chatting 구현, 공공 API 및 Firebase 이용하여 DB 구성 
+| 최성호 | Front-end 개발, 디자인 | 레이아웃 구성과 전반적인 디자인 구성
 ***
 
 # 기타
