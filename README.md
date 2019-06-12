@@ -3,7 +3,6 @@
 
 <br>[![logo](https://user-images.githubusercontent.com/48267116/59327044-58851800-8d23-11e9-8f99-54ea79c37b3d.png)
 ](https://github.com/cjoisunghoo)
-![show project](https://user-images.githubusercontent.com/38491289/55539064-c6490e00-56fa-11e9-8514-066251fd0093.PNG)
 
 ---
 
