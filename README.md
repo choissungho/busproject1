@@ -30,7 +30,5 @@
 위젯
 
 ### 기존 어플과의 차이점
-![s1](https://user-images.githubusercontent.com/48267116/59327679-3b514900-8d25-11e9-8bd7-42e9deb15943.jpg)
-![s2](https://user-images.githubusercontent.com/48267116/59327693-46a47480-8d25-11e9-8327-e20ec33ab36b.jpg)
-![s3](https://user-images.githubusercontent.com/48267116/59327701-4d32ec00-8d25-11e9-813b-b835b580a3a2.jpg)
-![s4](https://user-images.githubusercontent.com/48267116/59327716-54f29080-8d25-11e9-88c2-68c40827745e.jpg)
+![ss1](https://user-images.githubusercontent.com/48267116/59327914-ec57e380-8d25-11e9-9837-a0b2513b08c9.png)
+
