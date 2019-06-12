@@ -38,6 +38,6 @@
 <br>
 ![ss1](https://user-images.githubusercontent.com/48267116/59327914-ec57e380-8d25-11e9-9837-a0b2513b08c9.png)
 개발한 알리미(한눈에 시간을 확인 할수 있으며 위젯을 통해 간편하게 시간을 확인 할 수 있으며, 알람, 지도 등으로 편리함을 준다)<br>
-<br>
+<br><br><br>
 ![aaa](https://user-images.githubusercontent.com/48267116/59328461-66d53300-8d27-11e9-9971-bba3d5d40357.png)
 
